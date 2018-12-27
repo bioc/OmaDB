@@ -1,3 +1,6 @@
+# OmaDB 1.2.0 (Release data: 2018-12-27)
+- fixes access to non-character based object attributes which raised error previously
+
 # OmaDB 1.1.4 (Release date: 2018-10-11)
 - format option (geneID2GO or GO2geneID) included in getInfo()
 - automatic loading and updating of object attributes which are given as URLs upon accession 
