@@ -20,8 +20,8 @@ formatTopGO <- function(geneList,format){
 	}
 
 	geneID2GO = lapply(geneList, FUN = function(protein) {
-		if(startsWith(protein[['ontology']],"https://")){
-			annotation = resolveURL(protein[['ontology']])
+		if(startsWith(protein[['gene_ontology']],"https://")){
+			annotation = resolveURL(protein[['gene_ontology']])
 			if(class(annotation)=="data.frame"){
 				unlist(as.list(annotation[["GO_term"]]))
 			}
@@ -31,7 +31,7 @@ formatTopGO <- function(geneList,format){
 			}
 		else{
 			if(class(annotation)=="data.frame"){
-				unlist(as.list(protein[['ontology']][['GO_term']]))
+				unlist(as.list(protein[['gene_ontology']][['GO_term']]))
 			}
 			else{
 				annotation
