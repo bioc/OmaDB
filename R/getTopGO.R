@@ -8,7 +8,7 @@
 #' @return topGO object
 #' @export
 #' @import topGO
-#' @importFrom topGO annFUN.gene2GO
+#' @importFrom topGO annFUN.gene2GO annFUN.GO2gene
 #' @importFrom methods new
 #' @examples 
 #' geneList = list(getData(type="protein",id="YEAST58"),getData(type="protein",id="YEAST00059"))
